@@ -129,9 +129,9 @@ module.exports = (robot) ->
 
   robot.hear /^!score (.*)/i, (resp) ->
     game.checkScore(resp, resp.match[1].toLowerCase().trim())
-
-  robot.hear /^!scores/i, (resp) ->
-    game.checkScore(resp, "all")
+#
+#  robot.hear /^!scores/i, (resp) ->
+#    game.checkScore(resp, "all")
 
   robot.hear /^!h(int)?/, (resp) ->
     game.hint(resp)
